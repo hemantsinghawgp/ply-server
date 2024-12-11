@@ -29,8 +29,7 @@ const verifyJWT = (req, res, next) => {
 
 // MONGO DB ROUTES
 
-
-const uri = 'mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@ply.dqxow.mongodb.net/?retryWrites=true&w=majority&appName=ply';
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@ply.dqxow.mongodb.net/?retryWrites=true&w=majority&appName=ply`;
 
 async function testConnection() {
   try {
